@@ -1,0 +1,135 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe6f2;
+}
+
+.background {
+  background: url('assets/fundo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+.central-image {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.71); /* Adaptei a cor para ser mais flexível */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 400px;
+  height: auto;
+}
+
+.title {
+  color: #d63384;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form .input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Mudei para wrap para que em telas pequenas o layout seja flexível */
+  justify-content: center; /* Centraliza os itens na linha */
+}
+
+.task-input {
+  width: 100%;
+  max-width: 80%;
+  padding: 10px;
+  border: 2px solid #d63384;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.add-button {
+  background-color: #d63384;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button:hover {
+  background-color: #c01e6c;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fce7f3;
+  border: 1px solid #d63384;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.task-list li:hover {
+  transform: scale(1.02);
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Botões de Ação */
+.edit-btn, .delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #d63384;
+  margin-left: 10px;
+}
+
+.edit-btn:hover {
+  color: #c01e6c;
+}
+
+.delete-btn:hover {
+  color: #ff0000;
+}
+
+.footer {
+  background-color: #d633849a;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}

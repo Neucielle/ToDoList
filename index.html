@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Lista de tarefas</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/assets/desenho.png" type="image/x-icon">
+</head>
+<body>
+  <div class="background">
+    <div class="content-wrapper">
+      <img src="assets/desenho.png" alt="Imagem Central" class="central-image">
+      <div class="card">
+        <h1 class="title">
+          <i class="fas fa-heart"></i> Tarefas
+        </h1>
+        <form id="todo-form" class="form">
+          <div class="input-group">
+            <input id="task-input" 
+                   type="text" 
+                   class="task-input" 
+                   placeholder="Adicione uma tarefa especial 💖">
+            <button type="submit" class="add-button">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </form>
+        <ul id="task-list" class="task-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 MinhaLista 💕 Criado por Neucielle Quadros</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
